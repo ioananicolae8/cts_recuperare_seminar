@@ -1,0 +1,13 @@
+Code Review
+
+1.Conventii de nume 
+-numele clasei nu este ok, nu sugereaza scopul clasei
+-numele functiei nu este ok
+-numele argumentelor functiei nu este ok
+-variabila rezultat trb redenumita
+-variabila valoare trb redenumita
+
+
+-elimina valorile predefinite din functie
+
+-datele de intrare nu sunt validate
