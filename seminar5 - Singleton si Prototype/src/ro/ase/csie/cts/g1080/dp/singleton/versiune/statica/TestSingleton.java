@@ -10,7 +10,7 @@ ConexiuneBD conexiune2=ConexiuneBD.conexiune;
 	if(conexiune1==conexiune2) {
 		System.out.println("Cele 2 conexiuni sunt identice");
 	}
-
+ 
 }
 	
 }
