@@ -12,5 +12,5 @@ ConexiuneBD conexiune2=ConexiuneBD.conexiune;
 	}
     
 }
-	 
+	
 }
