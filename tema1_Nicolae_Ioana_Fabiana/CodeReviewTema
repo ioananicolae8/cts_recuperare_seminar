@@ -1,0 +1,54 @@
+1. Meaningful Names
+-Numele variabilelor nu respecta conventia Java (ex: valoare_imprumut -> valoareImprumut, tip_cont -> tipCont)
+2. Meaningful Names
+-Numele clasei este mult prea generic, pot exista mai multe tipuri de cont, asadar o voi redenumi
+3. Meaningful Names
+-Numele pachetului nu este sugestiv, asadar trebuie redenumit in ro.ase.csie.cts.tema
+4.Eliminare valori hardcodate 
+5. Formatting
+-Codul nu este formatat, in unele locuri exista spatii, in altele nu, etc.
+6. Use enums instead of int constants
+-Variabilia tip_cont nu ar trebui sa fie de tip int, deoarece s-ar potrivi mai bine pe un enum, cu valori predefinite;
+7.STANDARD, BUGET, PREMIUM, SUPER_PREMIUM trebuie mutate intr-un enum pentru ca se refera la aceeasi entitate si codul va fi mult mai ordonat
+8.Istoricul imprumuturilor nu se salveaza nicaieri
+-------9.Valoarea impumutului trebuie primita ca parametru la metoda care se ocupa cu acest lucru, adica imprumut()
+10.Metoda getRata() are ca scop returnarea unei valori, nu si afisarea ei, deci trebuie eliminat printul
+11. Comments
+-Comentariile sunt irelevante pentru cod; nu se folosesc comentarii pentru a justifica actiunile
+12.Metoda getRataLunara() nu calculeaza ceea ce numele sugereaza
+13. Exceptions
+-Metoda setValoare ar trebui sa aiba o exceptie custom si un mesaj, pentru a sti motivul erorii
+14. Always override toString
+-Metoda to_string nu suprascrie metoda corecta, si anume toString din Object
+15.Trebuie stabilit de la inceput ce limba se foloseste pentru scrierea codului; unele variabile sau metode sunt scrise in lb engleza, restul codului fiind precdominant in romana
+16.Concatenarea unui numar mare de stringuri (ex: 	return "Loan: "+this.valoare_imprumut+"; rate: "+this.rata+"; days active:"+zileActiv+"; Type: "+tip_cont+";";) este recomandat sa se faca cu StringBuffer
+17.Metoda print() nu realizeaza nimic 
+18.Variabila vb nu este folosita nicaieri si i se atribuie o valoare hardcodata
+19. Meaningful Names
+-Numele metodei calculeaza nu sugereaza ceea ce face ea de fapt; acesta trebuie schimbat
+20.Metoda calculeaza() este independenta fata de clasa si nu are sens in interiorul clasei, din cauza acelui static
+21.Valorile hardcodate trebuie puse in constante cu nume sugestiv
+22. Meaningful Names
+-Variabila temp nu este folosit, iar numele nu este sugestiv
+23.Variabila cont nu este necesara, deoarece se poate accesa elementul din lista direct
+23. Meaningful Names
+-Se face confuzie intre Cont si Account; Account nu exista, clasa mea fiind denumita Cont
+24. Comments
+-Comentariul: "//	1.25%	broker's	fee" nu are legatura cu codul
+24.Valoarea 0.125 ar trebui pusa intr-o variabila constanta 
+25.D.R.Y.
+-Eliminarea valorii 365, ea fiind declarata mai sus in variabila temp
+26.Comments
+-Comentariul "//	dobanda-principala" este un comentariu inutil
+27. Functions – Do one thing
+-Functia calculeaza() are prea multe responsabilitati, asadar voi face alte functii de care sa usurez intelegerea codului
+28. Functions - Do one thing
+-Functia calculeaza() trebuie sa efectueze operatia numai pentru contul curent, nu pentru o lista de conturi
+29.Variabilele trebuie declarate private, pentru a se respecta incapsularea
+30.Constructorul nu are ca parametru membrul clasei zileActiv
+31. Fundamentals- Avoid duplication of code
+-Metoda setValoare() este duplicata in constructor
+32. 
+-Inconsistenta in denumiri: constructorul trebuie sa respecte o regula de organizare a denumirilor de la bun inceput (membrii trebuie accesati ori cu this ori sa se stabileasca conventii de nume in constructor)
+33. Conditia pentru imprumut este gresita. Imprumutul este mai mare decat 0
+34.Construtorul trebuie realizat dupa definirea variabilelor
