@@ -6,7 +6,7 @@ import ro.ase.csie.cts.tema.exceptii.ExceptieValoareImprumutInvalida;
 public class ContBancar {
 	private static final double COMISION_INITIAL = 0.0;
 	private static final double COMISION_BROKER = 0.125;
-	private static final int ZILE_IN_AN = 365;
+	private static final int TOTAL_ZILE_LUNA = 30;
 
 	private double valoareImprumut, procentajDobanda;
 	private int zileActiveCont;
@@ -47,18 +47,20 @@ public class ContBancar {
 		return buffer.toString();
 	}
 
-	private double calculeazaValoareaDobanzii() {
-		return this.valoareImprumut * Math.pow(this.procentajDobanda, (this.zileActiveCont / ZILE_IN_AN))
-				- this.valoareImprumut;
+	private int calculeazaLuniActive() {
+		int luniActive = this.zileActiveCont / TOTAL_ZILE_LUNA;
+		luniActive += this.zileActiveCont % TOTAL_ZILE_LUNA > 0 ? 1 : 0;
+		return luniActive;
+	}
+
+	private double calculeazaDobandaAnualaEfectiva() {
+		return Math.pow(1 + (this.procentajDobanda / this.calculeazaLuniActive()), this.calculeazaLuniActive()) - 1;
 	}
 
 	public double calculeazaComision() {
-		double comisionTotal = COMISION_INITIAL;
-		if (this.tipContBancar == TipContBancar.PREMIUM || this.tipContBancar == TipContBancar.SUPER_PREMIUM) {
-			comisionTotal += COMISION_BROKER * calculeazaValoareaDobanzii();
-		}
-
-		return comisionTotal;
+		return this.tipContBancar == TipContBancar.PREMIUM || this.tipContBancar == TipContBancar.SUPER_PREMIUM
+				? COMISION_BROKER * this.calculeazaDobandaAnualaEfectiva()
+				: COMISION_INITIAL;
 	}
 
 }
