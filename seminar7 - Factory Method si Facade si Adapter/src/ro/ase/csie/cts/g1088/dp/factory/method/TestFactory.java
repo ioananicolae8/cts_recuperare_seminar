@@ -20,7 +20,6 @@ public class TestFactory {
 		CaracterJoc superman = factoryCaracter.getCaracter(TipCaracter.MARVEL,"Superman");
 		
 		
-	
 	}
 
 }
