@@ -15,6 +15,7 @@ public class Dragon extends SuperErou{
 	public void esteLovit(int puncte) {
 		System.out.println(String.format("%s este lovit si pierde %d puncte",
 				this.nume, puncte));
+		
 		this.puncteViata -= puncte;
 	}
 

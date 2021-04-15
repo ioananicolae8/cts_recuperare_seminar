@@ -12,6 +12,7 @@ public abstract class SuperErou {
 		this.puncteViata = puncteViata;
 	}
 	
+	
 	public abstract int getPuncteViata();
 	public abstract void alearga();
 	public abstract void esteLovit(int puncte);

@@ -1,6 +1,6 @@
 package ro.ase.csie.cts.g1088.dp.decorator;
 
-public abstract class DecoratorErouAbstract extends SuperErou{
+	public abstract class DecoratorErouAbstract extends SuperErou{
 
 	SuperErou erou = null;
 	
