@@ -1,0 +1,9 @@
+Singleton
+-Titlul: Aplicatie mobila pentru automonitorizarea si managerierea diabetului zaharat
+-Descrierea problemei: Sa se creeze o baza de date pentru aplicatie care sa foloseasca o singura conexiune eficient.
+-Avantaje: 
+1.Este o metoda rapida, deoarece creaza o singura conexiune.
+2.Conxiunea ramane deschisa cat timp aplicatia este folosita.
+-Dezavantaje:
+1.Pe Firebase pot exista anumite optiuni care pot aduce imbunatatiri bazei de date
+2.
