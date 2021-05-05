@@ -1,0 +1,8 @@
+Decorator
+-Titlul: Aplicatie mobila pentru automonitorizarea si managerierea diabetului zaharat
+-Descrierea problemei: Se doreste clasificarea utilizatorilor aprobati si a celor neaprobati.
+-Avantaje: 
+1. Pot fi mai multe tipuri de utilizatori
+2. Utilizatorii pot fi aprobati si dupa creare si nu mai este necesara modificarea clasei lor.
+-Dezavantaje:
+1. Se pot adauga prea multe proprietati noi utilizatorilor prin decorare.

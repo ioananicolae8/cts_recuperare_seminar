@@ -1,0 +1,9 @@
+Builder 
+-Titlul: Aplicatie mobila pentru automonitorizarea si managerierea diabetului zaharat
+-Descrierea problemei: Se doreste crearea unor jurnale zilnice pentru bolnavii de diabet intr-un mod organizat.
+-Avantaje: 
+1. Clasa JurnalulDiabeticuluiBuilder creaza un jurnal si facilitieaza setarea proprietatilor acestuia.
+2. Clasa JurnalulDiabeticuluiBuilder are metode care se pot apela optional in functie de ce doreste pacientul sa salveze (ex. notitele sunt optionale).
+-Dezavantaje:
+1. Cod suplimenatar pentru clasa JurnalulDiabeticuluiBuilder care in cazul acesta nu este absolut necesara.
+2. Se pot crea obiecte incomplete.

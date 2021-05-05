@@ -1,0 +1,9 @@
+Proxy
+-Titlul: Aplicatie mobila pentru automonitorizarea si managerierea diabetului zaharat
+-Descrierea problemei: Se doreste Logarea in aplicatie fara a accesa direct clasa LogIn, care se ocupa cu autentificarea.
+-Avantaje: 
+1. Clasa ProxyLogIn expune doar metodele necesare pentru autentificare.
+2. Logica suplimentara de autentificare este incapsulata.
+-Dezavantaje:
+1. Sunt necesare clase suplimentare.
+2. Se pot crea confuzii datorita numelor similare ale metodelor din proxy si clasa de autentificare.

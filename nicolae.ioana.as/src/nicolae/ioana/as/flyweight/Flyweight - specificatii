@@ -1,0 +1,9 @@
+Flyweight
+-Titlul: Aplicatie mobila pentru automonitorizarea si managerierea diabetului zaharat
+-Descrierea problemei: Sa se creeze medici care au specializari comune.
+-Avantaje: 
+1. Se refolosesc obiecte care au propriatetea "specializare" identica.
+2. Se economiseste timp prin setarea doar a celorlalte proprietati ale unui medic.
+-Dezavantaje:
+1. Daca sunt multe specializari, se va stoca cate un medic pentru fiecare, astfel ocupandu-se memorie.
+2. La fiecare creare se verifica daca exista un medic cu aceeasi specializare, iar acest proces va lua timp in plus.

@@ -1,0 +1,9 @@
+Prototype
+-Titlul: Aplicatie mobila pentru automonitorizarea si managerierea diabetului zaharat
+-Descrierea problemei: Se vrea crearea de retete similare intr-un mod eficient.
+-Avantaje: 
+1. Se creeaza o clona a unei retete, fara a mai seta toate proprietatile.
+2. Proprietatile diferite se pot seta dupa clonare, astfel ca este mai rapid.
+-Dezavantaje:
+1. Necesita atentie la clonare astfel sa se realizeze deep copy.
+2. Clasa Reteta are o metoda in plus, adica cea de clonare.
