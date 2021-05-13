@@ -3,6 +3,7 @@ package ro.ase.csie.cts.g1088.dp.chain;
 public class ModulFiltruRomana extends ModulProcesareMesaj{
 
 	public static final String[] dictionar =new String[] {"rau","violent", "neprietenos"};
+	String limba;
 	
 	@Override
 	public void procesareMesaj(MesajChat mesaj) {
