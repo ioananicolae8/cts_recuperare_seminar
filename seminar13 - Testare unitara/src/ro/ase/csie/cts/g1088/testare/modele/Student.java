@@ -57,7 +57,7 @@ public class Student {
 
 
 	public void setNote(ArrayList<Integer> note) throws ExceptieNota {
-		this.note = note;
+		this.note = (ArrayList<Integer>) note.clone();
 	}
 	
 	
